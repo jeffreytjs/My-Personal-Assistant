@@ -1,5 +1,7 @@
 import wikipedia
 
-input = input("Question: ")
-
-print(wikipedia.summary(input))
+while True:
+    input = input("Question: ")
+    # Set language eg. chinese
+    # wikipedia.set_lang("zh")
+    print(wikipedia.summary(input, sentences=2))
